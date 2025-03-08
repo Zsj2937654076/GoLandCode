@@ -57,11 +57,10 @@ func SetupRouter(db *sql.DB) http.Handler {
 	
 	// Set up CORS middleware
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"*"}, // In production, you would limit this to your frontend domain
-		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
-		AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type"},
+		AllowedOrigins: []string{"http://www.zsjurl.top"},
+		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+		AllowedHeaders: []string{"*"},
 		AllowCredentials: true,
-		MaxAge:           86400, // 24 hours
 	})
 
 	// Wrap router with CORS middleware

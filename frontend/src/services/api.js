@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // API base URL
-const API_URL = process.env.VUE_APP_API_URL || 'http://localhost:8080/api'
+const API_URL = 'http://www.zsjurl.top/api'
 
 // Create axios instance with base URL
 const apiClient = axios.create({
